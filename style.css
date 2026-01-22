@@ -102,3 +102,225 @@
   background: #ccc;
   border-radius: 2px;
 }
+
+
+/* .capabilities-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 14px;
+  border: 1px solid #e3e6f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}*/
+
+.capabilities-table thead {
+  background-color: #838486;
+  color: white;
+}
+
+.capabilities-table th {
+  padding: 16px 12px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.capabilities-table th:first-child {
+  width: 15%;
+}
+
+.capabilities-table th:nth-child(2) {
+  width: 25%;
+}
+
+.capabilities-table th:nth-child(3) {
+  width: 25%;
+}
+
+.capabilities-table th:last-child {
+  width: 35%;
+}
+
+.capabilities-table tbody tr {
+  border-bottom: 1px solid #e3e6f0;
+  transition: background-color 0.2s;
+}
+
+.capabilities-table tbody tr:hover {
+  background-color: #f8f9fc;
+}
+
+.capabilities-table td {
+  padding: 18px 12px;
+  vertical-align: top;
+}
+
+/* Task-specific styling */
+.task-row.lvc-task {
+  border-left: 4px solid #36b9cc;
+}
+
+.task-row.evc-task {
+  border-left: 4px solid #1cc88a;
+}
+
+.task-row.svc-task {
+  border-left: 4px solid #f6c23e;
+}
+
+.task-name {
+  font-size: 15px;
+}
+
+.task-desc {
+  display: block;
+  font-size: 12px;
+  color: #6e707e;
+  margin-top: 4px;
+}
+
+.baseline-models {
+  color: #5a5c69;
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+
+.our-model {
+  font-weight: 500;
+}
+
+.capability-indicator {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.capability-indicator.full-support {
+  background-color: #00a86b;
+  color: white;
+}
+
+.model-desc {
+  font-size: 12px;
+  color: #5a5c69;
+  line-height: 1.4;
+}
+
+.application {
+  font-size: 13px;
+  color: #5a5c69;
+  line-height: 1.5;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .capabilities-table {
+    font-size: 13px;
+  }
+  
+  .capabilities-table th,
+  .capabilities-table td {
+    padding: 12px 8px;
+  }
+  
+  .capabilities-table th:first-child,
+  .capabilities-table th:nth-child(2),
+  .capabilities-table th:nth-child(3),
+  .capabilities-table th:last-child {
+    width: auto;
+  }
+  
+  .task-desc {
+    font-size: 11px;
+  }
+}
+
+
+.header-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 0 30px;
+  flex-wrap: wrap;
+}
+
+.icon-link {
+  text-decoration: none;
+  color: #333;
+  transition: all 0.2s ease;
+}
+
+.icon-link:hover {
+  transform: translateY(-2px);
+  color: #157878; /* 与页面主题色匹配 */
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  transition: all 0.2s ease;
+  min-width: 100px;
+}
+
+.icon:hover {
+  background: #e9ecef;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.icon svg {
+  color: #495057;
+}
+
+.icon:hover svg {
+  color: #157878;
+}
+
+.icon span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #495057;
+}
+
+.icon:hover span {
+  color: #157878;
+}
+
+/* 各图标特有颜色 */
+.github-icon:hover {
+  border-color: #333;
+}
+
+.arxiv-icon:hover {
+  border-color: #b31b1b; /* arXiv红色 */
+}
+
+.demo-icon:hover {
+  border-color: #28a745; /* 演示页绿色 */
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .header-icons {
+    gap: 15px;
+  }
+  
+  .icon {
+    min-width: 80px;
+    padding: 10px 12px;
+  }
+  
+  .icon span {
+    font-size: 13px;
+  }
+}
